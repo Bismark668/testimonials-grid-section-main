@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+    gap: 1.5rem;
+    background-color: hsl(0, 0%, 81%);
+    padding-left: 2rem;
+    padding-right: 2re;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.daniel-card{
+    width:95%;
+    height: auto;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    padding:5px 10px 5px 10px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: right 100px;
+    background-color: hsl(263, 55%, 52%);
+}
+.D-details{
+    width: 80%;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.D-img{
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+.bg{
+    float: right;
+}
+.handles{
+    margin: 2px;
+}
+
+.jonathan-card{
+    width: 95%;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    padding:5px 10px 5px 10px;
+    background-color:  hsl(217, 19%, 35%);
+}
+
+.Jeanette-card{
+    width: 95%;
+    border-radius: 10px;
+    padding:5px 10px 5px 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.patrick-card{
+    width: 95%;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding:5px 10px 5px 10px;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.kira-card{
+    width: 95%;
+    border-radius: 10px;
+    padding:5px 10px 5px 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+.daniel-card{
+    grid-area: one;
+
+}
+.jonathan-card{
+    grid-area: two;
+
+}
+
+.Jeanette-card{
+    grid-area: three;
+
+}
+
+.patrick-card{
+    grid-area: four;
+
+}
+
+.kira-card{
+    grid-area: five;
+
+}
+.p-text{
+    Font-size: 13px;
+
+}
+
+@media(min-width:768px) {
+    .main{
+        grid-template-areas: 
+        'one one two five'
+        'three four four five'  
+    }
+}
+
+
+
